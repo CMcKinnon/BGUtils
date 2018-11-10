@@ -1,0 +1,23 @@
+{
+  "name": "bgutils",
+  "version": "1.0.0",
+  "description": "BGUtils website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMcKinnon/BGUtils.git"
+  },
+  "author": "Corey McKinnon",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/CMcKinnon/BGUtils/issues"
+  },
+  "homepage": "https://github.com/CMcKinnon/BGUtils#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
