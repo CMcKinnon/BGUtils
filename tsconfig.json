@@ -1,0 +1,28 @@
+﻿{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "wwwroot/js/src",
+    "declarationDir": "wwwroot/js/src/types",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "module": "es6",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "lib": [ "es2017", "dom", "es6" ]
+  },
+  "include": [
+    "wwwroot/js/src/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*.d.ts",
+    "wwwroot/js/src/*.d.ts",
+    "wwwroot/lib",
+    "bin",
+    "obj"
+  ]
+}

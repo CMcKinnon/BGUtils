@@ -1,4 +1,6 @@
-﻿const ver = "1.0";
+﻿import axios, { AxiosInstance, AxiosResponse, AxiosPromise } from "axios";
 
-console.log("version: " + ver);
 
+console.log("Hello javascript");
+
+axios.get('/api/collections');
