@@ -13,12 +13,69 @@
     </environment>
 </head>
 <body>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - BGUtils</p>
-        </footer>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-1">
+                        <a href="/">
+                            <img src="~/images/header-logo.png" />
+                        </a>
+                    </div>
+                    <div class="column">
+                        <h1 class="title">
+                            BGUtils.com
+                        </h1>
+                        <h2 class="subtitle">
+                            Tools for BoardGameGeek users.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMain" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="/About">
+                        About
+                    </a>
+
+                    <a class="navbar-item" href="/Contact">
+                        Contact
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+
+            @RenderBody()
+            <hr />
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>BGUtils.com</strong> &copy; @DateTime.Now.Year by Corey McKinnon.
+                    </p>
+                </div>
+            </footer>
+        </div>
     </div>
 
     <environment include="Development">

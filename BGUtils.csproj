@@ -8,6 +8,7 @@
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
     <Content Remove="wwwroot\js\src\site.ts" />
+    <Content Remove="wwwroot\js\src\_nav\_nav.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +28,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\js\src\site.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\_nav\_nav.ts" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
