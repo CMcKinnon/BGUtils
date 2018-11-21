@@ -7,7 +7,11 @@
 
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
+    <Content Remove="wwwroot\js\src\contracts\User.ts" />
+    <Content Remove="wwwroot\js\src\httpClient.ts" />
+    <Content Remove="wwwroot\js\src\providers\UsersProvider.ts" />
     <Content Remove="wwwroot\js\src\site.ts" />
+    <Content Remove="wwwroot\js\src\view-models\UsersViewModel.ts" />
     <Content Remove="wwwroot\js\src\_nav\_nav.ts" />
   </ItemGroup>
 
@@ -28,7 +32,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\src\contracts\User.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\httpClient.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\providers\UsersProvider.ts" />
     <TypeScriptCompile Include="wwwroot\js\src\site.ts" />
+    <TypeScriptCompile Include="wwwroot\js\src\view-models\UsersViewModel.ts" />
     <TypeScriptCompile Include="wwwroot\js\src\_nav\_nav.ts" />
   </ItemGroup>
 
