@@ -47,17 +47,9 @@
 
             <div id="navbarMain" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="/">
-                        Home
-                    </a>
-
-                    <a class="navbar-item" href="/About">
-                        About
-                    </a>
-
-                    <a class="navbar-item" href="/Contact">
-                        Contact
-                    </a>
+                    <a class="navbar-item" asp-action="Index" asp-controller="Home">Home</a>
+                    <a class="navbar-item" asp-action="About" asp-controller="Home">About</a>
+                    <a class="navbar-item" asp-action="Contact" asp-controller="Home">Contact</a>
                 </div>
 
                 <div class="navbar-end">
@@ -65,13 +57,16 @@
             </div>
         </nav>
         <div class="container">
-
+            <br />
             @RenderBody()
             <hr />
             <footer class="footer">
                 <div class="content has-text-centered">
-                    <p>
+                    <p class="is-size-7">
                         <strong>BGUtils.com</strong> &copy; @DateTime.Now.Year by Corey McKinnon.
+                    </p>
+                    <p class="is-size-7">
+                        Data provided by <a href="https://boardgamegeek.com" target="_blank">BoardGameGeek</a>, per their <a href="https://boardgamegeek.com/wiki/page/XML_API_Terms_of_Use" target="_blank">terms of use</a>.
                     </p>
                 </div>
             </footer>
